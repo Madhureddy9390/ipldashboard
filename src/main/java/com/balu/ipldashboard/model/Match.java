@@ -1,10 +1,15 @@
 package com.balu.ipldashboard.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.time.LocalDate;
 
 //ideal match data
+@Entity  // If we keep entiry it will automatically create a table with fields
 public class Match {
 
+    @Id  //Primary key
     private long id;
     private String city;
     private LocalDate date;
